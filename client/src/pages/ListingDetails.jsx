@@ -19,7 +19,7 @@ const ListingDetails = () => {
   const getListingDetails = async () => {
     try {
       const response = await fetch(
-        `http://localhost:3001/properties/${listingId}`,
+        `https://dream-nest-server.onrender.com/properties/${listingId}`,
         {
           method: "GET",
         }
@@ -74,7 +74,7 @@ const ListingDetails = () => {
         totalPrice: listing.price * dayCount,
       }
 
-      const response = await fetch("http://localhost:3001/bookings/create", {
+      const response = await fetch("https://dream-nest-server.onrender.com/bookings/create", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
