@@ -46,7 +46,7 @@ function Navbar() {
             <Person />
           ) : (
             <img
-              src={`http://localhost:3001/${user.profileImagePath.replace(
+              src={`https://dream-nest-server.onrender.com/${user.profileImagePath.replace(
                 "public",
                 ""
               )}`}
